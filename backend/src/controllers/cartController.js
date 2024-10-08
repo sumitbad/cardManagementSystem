@@ -2,10 +2,8 @@ let cart = [];
 
 export const getCart = (req, res) => {
   const userId = req.user.id; 
-  console.log("this is cart", cart);
-
   const userCart = cart.filter(item => item.userId === userId); 
-  res.json(cart);
+  res.json(userCart);
 };
 
 
