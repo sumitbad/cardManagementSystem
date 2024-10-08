@@ -38,7 +38,6 @@ router.post(
     const newUser = { id: uuidv4(), username, password: hashedPassword };
     users.push(newUser); // Store the new user in the array
 
-    console.log("This is the newly created user:", newUser);
     return res.status(201).json({ message: 'User registered successfully', userId: newUser.id });
   }
 );

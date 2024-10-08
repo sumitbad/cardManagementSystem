@@ -7,7 +7,6 @@ export const authenticateUser = (req, res, next) => {
   if (!token) return res.status(403).send('Token is required');
   const tokenValue = token.split(' ')[1]; 
 
-  console.log("This is the token value: ", tokenValue); 
   // Verify the token
   jwt.verify(tokenValue, process.env.JWT_SECRET, (err, user) => {
     if (err) return res.sendStatus(403); 
