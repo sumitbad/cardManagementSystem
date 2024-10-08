@@ -1,0 +1,137 @@
+/* src/styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.register-login {
+  margin-top: 10px;
+}
+
+.register-login p {
+  margin: 0;
+}
+
+
+
+/* styles.css */
+
+/* Cart Container */
+.cart-container {
+  max-width: 600px; /* Set a max width for better readability */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Add padding around the content */
+  border: 1px solid #ddd; /* Light border around the cart */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading */
+.cart-container h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark color for the heading */
+}
+
+/* List of Cart Items */
+.cart-item {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between item details and button */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Padding around each item */
+  border-bottom: 1px solid #ddd; /* Divider between items */
+}
+
+.cart-item:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+/* Button Styles */
+.cart-item button {
+  background-color: #ff4d4d; /* Red background for remove button */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Padding for button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for smooth effect */
+}
+
+.cart-item button:hover {
+  background-color: #d43f3f; /* Darker red on hover */
+}
+
+/* Empty Cart Message */
+.cart-container p {
+  text-align: center; /* Center the text */
+  color: #777; /* Light gray for empty cart message */
+}
+
+.cart-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.cart-item-image {
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  margin-right: 10px;
+}
+
+/*  */

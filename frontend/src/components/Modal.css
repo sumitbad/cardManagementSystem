@@ -1,0 +1,57 @@
+/* src/components/Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is on top */
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px; /* Set a fixed width for the modal */
+  max-height: 400px; /* Set a maximum height for the modal */
+  overflow-y: auto; /* Allow vertical scrolling */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+}
+
+.modal-content h2 {
+  margin: 0 0 15px;
+}
+
+.modal-content ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.modal-content li {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Space between list items */
+  padding: 5px; /* Add some padding around the items */
+  border-bottom: 1px solid #ddd; /* Optional: add a border for separation */
+}
+
+.modal-content li:last-child {
+  border-bottom: none; /* Remove the border for the last item */
+}
+
+.modal-content img {
+  width: 50px; /* Set a fixed width for images */
+  height: 50px; /* Set a fixed height for images */
+  margin-right: 10px; /* Space between the image and the text */
+}
+
+.modal-content button {
+  margin-left: auto; /* Push the select button to the right */
+  padding: 5px 10px; /* Adjust padding for the button */
+  cursor: pointer; /* Show pointer cursor for buttons */
+}
